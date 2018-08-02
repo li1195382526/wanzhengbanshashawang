@@ -1,0 +1,57 @@
+{
+    "one":[
+                {
+                    "src" : "images/list/jx1.jpg",
+                    "name" : "维肯VK28移动电源5200mAh",
+                    "price" : "￥59"
+                },
+                {
+                    "src" : "images/list/jx2.jpg",
+                    "name" : "viken维肯Micro USB安卓镀",
+                    "price" : "￥29"
+                },
+                {
+                    "src" : "images/list/jx3.jpg",
+                    "name" : "山业SANWA多孔气泡硅胶鼠标",
+                    "price" : "￥99"
+                },
+                {
+                    "src" : "images/list/jx4.jpg",
+                    "name" : "诺希80W电子烟黑色",
+                    "price" : "￥199"
+                },
+                {
+                    "src" : "images/list/jx5.jpg",
+                    "name" : "Viken维肯VE-203有线耳机",
+                    "price" : "￥29"
+                }
+            ],
+    "two":[
+                {
+                    "src" : "images/list/jx6.jpg",
+                    "name" : "华为HUAWEI P10 Plus全网通",
+                    "price" : "￥4488"
+                },
+                {
+                    "src" : "images/list/jx7.jpg",
+                    "name" : "诺希苹果5电池",
+                    "price" : "￥75"
+                },
+                {
+                    "src" : "images/list/jx8.jpg",
+                    "name" : "华为Mate9 6GB+128GB版全",
+                    "price" : "￥4099"
+                },
+                {
+                    "src" : "images/list/jx9.jpg",
+                    "name" : "佳能EOS M5套机",
+                    "price" : "￥5599"
+                },
+                {
+                    "src" : "images/list/jx10.jpg",
+                    "name" : "华为荣耀8青春版全网通4G",
+                    "price" : "￥1399"
+                }
+            ]
+
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>注册页</title>
     <link rel="stylesheet" href="../dist/index.min.css">
     <link rel="stylesheet" href="../dist/register.min.css">
 </head>
@@ -44,18 +44,151 @@
                 <p class = "box2">立即注册</p>
             </div>
             <div class = "msg">
-                <input type="text" value = "请输入邮箱/手机号最少5个字符"><br>
-                <input type="text" value = "请输入密码6-16位字母和数字的组合"><br>
-                <input type="text" value = "再次填写密码"><br>
-                <input type="text" value = "填写验证码" class = "test">
-                <div class = "test1"></div><span>看不清换一张图</span>
+                <form>
+                    <input type="text" placeholder = "请输入邮箱/手机号最少5个字符" name="uname" id="uname"><br>
+                    <input type="text" placeholder = "请输入密码6-16位字母和数字的组合" name="upwd" id="upwd"><br>
+                    <input type="text" placeholder = "再次填写密码" id = "rupwd"><br>
+                    <input type="text" placeholder = "" class = "test" id = "test">
+
+                <div class = "test1" id = "test1">sbddsd</div><span id = "span">看不清换一张图</span>
             </div>
             <div class = "change">
-                <input type="radio" name = "agree"><span>我已接受及接受</span><i>使用条款</i><span>及</span><i>隐私政策</i><br>
+                <input type="radio" name = "agree" id = "agree"><span>我已接受及接受</span><i>使用条款</i><span>及</span><i>隐私政策</i><br>
                 <input type="radio" name = "agree"><span>我不同意莎莎使用我的个人资料作直接促销</span>
             </div>
-            <div class = "reg">注册</div>
+            <input type="button" class = "reg" value = "注册" id = "submit">
+            <!-- <div >注册</div> -->
+        </form>
+
         </div>
     </div>
 </body>
 </html>
+<script src = "../dist/index.min.js"></script>
+<script>
+    //邮箱、手机号验证
+    // var reg = /^\w{5,6}$/;
+    var f = false
+    var oInput = document.getElementById("uname");
+    oInput.onblur = function(){
+        var reg = /(^(\w+\.?)*\w+@(?:\w+\.)\w+$)|(^1[0-9]{10}$)/;
+    // var reg = /^1[0-9]{10}/;
+
+        if( reg.test(oInput.value)){
+            f = true;
+            console.log("输入正确")
+        }else{
+            oInput.value = "请正确输入邮箱/手机号";
+            oInput.style.color = "red";
+        }
+
+    }
+
+        //密码验证
+        var ff = false;
+        var oUpwd = document.getElementById("upwd");
+        oUpwd.onblur = function(){
+            var reg = /^.{6,16}$/;
+            if( reg.test(oUpwd.value) ){
+                ff = true;
+                console.log("输入正确")
+            }else{
+                oUpwd.value = "请输入密码6-16位字母和数字的组合";
+                oUpwd.style.color = "red";
+            }
+        }
+        //判断密码是否一致
+        fff = false;
+        var oRupwd = document.getElementById("rupwd");
+        oRupwd.onblur = function(){
+            if(oUpwd.value === oRupwd.value){
+                fff = true;
+                console.log("密码输入正确")
+            }else{
+                oRupwd.value = "密码与上次输入不符";
+                oRupwd.style.color = "red";
+            }
+        }
+
+        //随机验证码
+
+        var oSpan = document.getElementById("span");
+        var oTest1 = document.getElementById("test1");
+        oSpan.onclick = function(){
+            oTest1.innerHTML = testCode(5);
+        }
+                function testCode(n){
+                var arr = [];
+                for(var i = 0; i < n; i++){
+                    //1、随机0~99的数
+                    var num = parseInt(Math.random() * 100);
+                    if(num >= 0 && num <= 9){
+                        arr.push(num);
+                    }else if(num >= 65 && num <= 90){
+                        arr.push(String.fromCharCode(num));
+                    }else if(num >= 27 && num <= 52){
+                        arr.push(String.fromCharCode(num + 70));
+                    }else{
+                        //没用的数
+                        i--;
+                    }
+                }
+                // alert(arr);
+                return arr.join("");
+            }
+    //判断验证码是否填写
+        var ffff = false;
+        var oTest = document.getElementById("test");
+        oTest.onblur = function(){
+        if(oTest.value == oTest1.innerHTML){
+            ffff = true;
+            console.log("验证码输入正确");
+         }else{
+            oTest.value = "验证码有误";
+            oTest.style.color = "red";
+         }
+        }
+
+        // 判断是否同意协议
+        var fffff = false;
+        var rids = document.getElementById("agree");
+          // if( rids.checked ){
+          //       fffff = true;
+          //   }else{
+          //       rids.style.color = "red";
+          //   }
+
+
+
+
+        // var oTest = document.getElementById("test");
+        var oSubmit = document.getElementById("submit");
+        oSubmit.onclick = function(){
+
+             if(oTest.value == "" && oInput.value == "" && oInput.value  == "" && oRupwd.value == ""){
+            alert("请填写信息")
+            }
+            console.log(f && ff && fff && ffff && rids.checked)
+            if(f && ff && fff && ffff && rids.checked){
+
+                $.ajax({
+                    // alert("ssss"),
+                    type : "post",
+                    url : "registor.php",
+                    data : {
+                        "uname" : oInput.value,
+                        "upwd" : oUpwd.value
+                    },
+                    success : function(data){
+                        alert(data);
+                        location.href = 'login.html';
+                    }
+                });
+            }else{
+                console.log("输入信息有误");
+            }
+
+         }
+
+
+</script>

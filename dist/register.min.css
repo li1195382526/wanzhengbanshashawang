@@ -62,7 +62,10 @@ li {
   height: 38px;
   background: pink;
   float: left;
-  margin-left: 5px; }
+  margin-left: 5px;
+  text-align: center;
+  line-height: 38px;
+  color: red; }
 
 .msg span {
   width: 100px;

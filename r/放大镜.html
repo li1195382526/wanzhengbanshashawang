@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="da.css">
+</head>
+<body>
+    <div class="fangdajing">
+                    <div id="div1">
+                        <img id="img1" src="images/particular/big1.jpg" />
+                        <div id="glass"></div>
+                    </div>
+                    <div id="div2">
+                        <img id="img2" src="images/particular/big1.jpg" />
+                    </div>
+                    <div id="box">
+                        <div id="a"><span></span></div>
+                        <div id="b">
+                            <ul id="ult">
+                                <li><img src="images/particular/big1.jpg"/></li>
+                                <li><img src="images/particular/big2.jpg"/></li>
+                                <li><img src="images/particular/big3.jpg"/></li>
+                                <li><img src="images/particular/big4.jpg"/></li>
+                                <li><img src="images/particular/big5.jpg"/></li>
+                                <li><img src="images/particular/big6.jpg"/></li>
+                            </ul>
+                        </div>
+                        <div id="c"><span></span></div>
+                    </div>
+                    <a href="#">浏览更多图片</a>
+                    <a href="#">分享到：</a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+
+</body>
+</html>
+<script>
+    window.onload = function(){
+        var div1 = document.getElementById("div1");
+        var glass = document.getElementById('glass');
+        var img2 = document.getElementById("img2");
+        var div2 = document.getElementById("div2");
+        var b = document.getElementById("b");
+        var ult = document.getElementById("ult")
+        $('#div1').mousemove(function(e){
+            glass.style.display="block";
+            div2.style.display="block";
+            var e = e || window.e;
+            var [x,y]=[e.clientX,e.clientY];
+
+            x-=glass.offsetWidth/2 + 75;
+            y-=glass.offsetHeight/2 + 210;
+            if(x<0){
+                x=0;
+            }
+            if(y<0){
+                y=0;
+            }
+            var maxw=div1.offsetWidth-glass.offsetWidth-2;
+            var maxh=div1.offsetHeight-glass.offsetHeight-2;
+            if(x>maxw){x=maxw;}
+            if(y>maxh){y=maxh;}
+            [glass.style.left, glass.style.top] = [x+'px', y+'px'];
+            img2.style.left = -2*x+"px";
+            img2.style.top = -2*y+"px";
+            div1.onmouseout = function(){
+                glass.style.display="none";
+                div2.style.display="none";
+            }
+        });
+        b.onmouseover=e=>{
+            var el=e.target;
+            if(el.nodeName=="IMG"){
+                img1.src=img2.src=el.src;
+            }
+        }
+        a.onclick=()=>{
+            ult.style.left = "0px";
+        }
+        c.onclick=()=>{
+            ult.style.left = "-280px";
+        }
+    }
+</script>
+

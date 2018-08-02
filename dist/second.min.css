@@ -37,6 +37,8 @@
         color: #82828d; }
       .product .product1 li img {
         margin-right: 10px; }
+    .product .product1 li:hover a {
+      color: #ffab2e; }
     .product .product1 .product2 {
       background: #e8e6e7;
       width: 254px;
@@ -46,6 +48,9 @@
         height: 48px;
         border-bottom: 1px dashed #fff;
         line-height: 48px; }
+      .product .product1 .product2 li:nth-child(1) {
+        display: none;
+        height: 0; }
   .product .cate {
     width: 808px;
     float: left;
@@ -96,7 +101,56 @@
     .product .cate .new3 {
       width: 820px; }
       .product .cate .new3 .new4 {
-        width: 252px; }
+        width: 252px;
+        height: 481px;
+        position: relative; }
+        .product .cate .new3 .new4 .righthover {
+          width: 86px;
+          height: 252px;
+          position: absolute;
+          left: 256px;
+          top: 0;
+          z-index: 3;
+          display: none; }
+          .product .cate .new3 .new4 .righthover li {
+            width: 84px;
+            height: 84px;
+            text-align: center; }
+          .product .cate .new3 .new4 .righthover li:hover {
+            border: 4px solid #c69a62; }
+        .product .cate .new3 .new4 .bottomhover {
+          height: 77px;
+          width: 338px;
+          position: absolute;
+          z-index: 3;
+          display: none; }
+          .product .cate .new3 .new4 .bottomhover button {
+            width: 224px;
+            height: 43px;
+            background: #ec3e7d;
+            font-size: 18px;
+            text-align: center;
+            line-height: 43px;
+            margin-left: 58px;
+            margin-top: 20px;
+            border: none; }
+            .product .cate .new3 .new4 .bottomhover button a {
+              color: #fff; }
+      .product .cate .new3 .new4:hover {
+        border: 1px solid #ccc;
+        border-right: none;
+        border-bottom: none; }
+        .product .cate .new3 .new4:hover .righthover {
+          display: block;
+          background: #fff;
+          border-top: 1px solid #ccc;
+          border-right: 1px solid #ccc; }
+        .product .cate .new3 .new4:hover .bottomhover {
+          display: block;
+          background: #fff;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #ccc; }
 
 .many {
   width: 808px;
@@ -141,10 +195,11 @@
     float: right;
     margin-right: 155px; }
 
-.hover1 {
-  width: 85px;
-  height: 251px;
-  position: absolute; }
-
-.new5 {
+.list22 {
   position: relative; }
+
+.list33 {
+  position: absolute;
+  left: 22px;
+  top: 183px;
+  display: none; }

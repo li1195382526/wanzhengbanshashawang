@@ -1,0 +1,173 @@
+  .fangdajing{
+            width: 305px;
+            height: 417px;
+            position: relative;
+            float: left;
+            #div1{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #CCCCCC;
+            margin-top: 15px;
+            position: absolute;
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+                #glass{
+                    width: 100px;
+                    height: 100px;
+                    background: white;
+                    opacity: 0.5;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    border:1px solid orange;
+                    overflow: hidden;
+                    display: none;
+                }
+            }
+            #div2{
+                width: 300px;
+                height: 300px;
+                border: 1px solid orange;
+                position: absolute;
+                left: 302px;
+                top: 15px;
+                overflow: hidden;
+                display: none;
+                img{
+                    width: 700px;
+                    height: 700px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            #box{
+                width: 302px;
+                height: 64px;
+
+                position: relative;
+                top: 325px;
+
+                #a{
+                    z-index: 3;
+                    width: 12px;
+                    height: 64px;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    background: white;
+                    span{
+                        width: 8px;
+                        height: 11px;
+                        display: block;
+                        margin-top: 25px;
+                        background: url(../images/particular/vi_bg.png)no-repeat -81px 0px;
+                    }
+                    &:hover{
+                        span{
+                            background: url(../images/particular/vi_bg.png)no-repeat -81px -22px;
+                        }
+
+                    }
+                }
+                #c{
+                    z-index: 3;
+                    width: 12px;
+                    height: 64px;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    background: white;
+                    span{
+                        width: 8px;
+                        height: 11px;
+                        display: block;
+                        margin-top: 25px;
+                        margin-left: 2px;
+                        background: url(../images/particular/vi_bg.png)no-repeat -101px 0px;
+                    }
+                    &:hover{
+                        span{
+                            background: url(../images/particular/vi_bg.png)no-repeat -101px -22px;
+                        }
+
+                    }
+                }
+                #b{
+                    width: 276px;
+                    height: 64px;
+//                  background: yellow;
+                    position: absolute;
+                    top: 0px;
+                    left: 12px;
+                    overflow: hidden;
+                    #ult{
+                        width: 426px;
+                        height: 64px;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        li{
+                            border: 1px solid #CCCCCC;
+                            float: left;
+                            width: 60px;
+                            height: 60px;
+                            margin: 1px 9px 0px 0px;
+                            &:last-of-type{
+                                margin-right: 9px;
+                            }
+                            &:hover{
+                                border: 1px solid darkred;
+                            }
+                            img{
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+            a{
+                position: absolute;
+                bottom: 0px;
+                &:nth-of-type(1){
+                    left: 10px;
+                    color: #4c66cc;
+                    font-size: $fontsize;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &:nth-of-type(2){
+                    color: #666666;
+                    font-size: $fontsize;
+                    left: 155px;
+                }
+                &:nth-of-type(3){
+                    width: 16px;
+                    height: 16px;
+                    left: 200px;
+                    background: url(../images/particular/ui_enjoy.jpg)no-repeat;
+                }
+                &:nth-of-type(4){
+                    width: 16px;
+                    height: 16px;
+                    left: 225px;
+                    background: url(../images/particular/ui_enjoy.jpg)no-repeat 0px -16px;
+                }
+                &:nth-of-type(5){
+                    width: 16px;
+                    height: 16px;
+                    left: 250px;
+                    background: url(../images/particular/ui_enjoy.jpg)no-repeat 0px -32px;
+                }
+                &:nth-of-type(6){
+                    width: 16px;
+                    height: 16px;
+                    left: 275px;
+                    background: url(../images/particular/ui_enjoy.jpg)no-repeat 0px -48px;
+                }
+            }
+        }

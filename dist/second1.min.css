@@ -1,0 +1,214 @@
+.all {
+  width: 1091px;
+  margin: 50px auto;
+  height: auto;
+  overflow: hidden; }
+
+.product {
+  width: 1091px;
+  margin: 50px auto; }
+  .product .product1 {
+    width: 256px;
+    height: 617px;
+    float: left;
+    margin-right: 24px; }
+    .product .product1 h4 {
+      width: 145px;
+      height: 47px;
+      border-left: 5px solid #c69a62;
+      font-size: 19px;
+      text-align: center;
+      line-height: 47px; }
+    .product .product1 h5 {
+      width: 100px;
+      height: 60px;
+      margin-left: 10px;
+      line-height: 60px;
+      text-align: center;
+      font-weight: normal;
+      color: #565d67; }
+      .product .product1 h5 img {
+        margin-right: 13px; }
+    .product .product1 li {
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      padding-left: 38px; }
+      .product .product1 li a {
+        color: #82828d; }
+      .product .product1 li img {
+        margin-right: 10px; }
+    .product .product1 li:hover a {
+      color: #ffab2e; }
+    .product .product1 .product2 {
+      background: #e8e6e7;
+      width: 254px;
+      height: 402px; }
+      .product .product1 .product2 li {
+        width: 254px;
+        height: 48px;
+        border-bottom: 1px dashed #fff;
+        line-height: 48px; }
+      .product .product1 .product2 li:nth-child(1) {
+        display: none;
+        height: 0; }
+  .product .cate {
+    width: 447px;
+    float: left;
+    height: 408px; }
+    .product .cate .cate1 {
+      border-bottom: 1px solid #d7d7d7;
+      height: 43px;
+      line-height: 43px;
+      width: 808px; }
+      .product .cate .cate1 span {
+        color: #8d8d8d;
+        font-size: 12px;
+        margin-left: 16px;
+        float: left; }
+      .product .cate .cate1 i {
+        font-style: normal;
+        color: #c69a62;
+        float: right;
+        font-size: 12px;
+        margin-right: 16px; }
+    .product .cate .cate2 {
+      height: 112px;
+      width: 808px;
+      border-bottom: 1px dashed #d7d7d7; }
+      .product .cate .cate2 span {
+        width: 60px;
+        line-height: 51px;
+        text-align: center;
+        font-size: 12px;
+        color: #8d8d8d;
+        float: left; }
+      .product .cate .cate2 ul {
+        margin-left: 90px;
+        margin-top: 17px;
+        float: left; }
+        .product .cate .cate2 ul li {
+          height: 32px; }
+          .product .cate .cate2 ul li a {
+            font-size: 12px;
+            color: #000; }
+      .product .cate .cate2 i {
+        font-style: normal;
+        color: #c69a62;
+        float: right;
+        font-size: 12px;
+        margin-top: 16px;
+        margin-right: 16px; }
+  .product .many {
+    width: 808px;
+    height: 30px;
+    float: right; }
+    .product .many span {
+      display: block;
+      float: right;
+      font-size: 12px;
+      line-height: 30px; }
+  .product .people {
+    width: 808px;
+    height: 30px;
+    margin-top: 25px; }
+    .product .people ul {
+      width: 808px; }
+      .product .people ul li {
+        float: left;
+        border-right: 1px solid #f1f1f1;
+        margin-left: 20px;
+        margin-right: 20px; }
+        .product .people ul li a {
+          font-size: 12px;
+          color: #666666; }
+      .product .people ul li:nth-child(7) {
+        margin-right: 0;
+        color: #3e3e3e;
+        border-right: none; }
+        .product .people ul li:nth-child(7) img {
+          margin-right: 4px; }
+        .product .people ul li:nth-child(7) span {
+          margin-left: 25px;
+          color: #818284;
+          font-size: 12px; }
+
+.page {
+  width: 100%;
+  height: 222px;
+  background: #f2f2f2; }
+  .page img {
+    float: right;
+    margin-right: 155px; }
+
+.list22 {
+  position: relative; }
+
+.list33 {
+  position: absolute;
+  left: 22px;
+  top: 183px;
+  display: none; }
+
+.tesell {
+  width: 812px;
+  height: auto;
+  float: right;
+  margin: 30px auto; }
+
+.new3 {
+  width: 812px;
+  margin-top: 50px;
+  height: auto; }
+  .new3 .new4 {
+    width: 252px;
+    height: 481px;
+    position: relative; }
+    .new3 .new4 .righthover {
+      width: 86px;
+      height: 252px;
+      position: absolute;
+      left: 255px;
+      top: 0;
+      z-index: 3;
+      display: none; }
+      .new3 .new4 .righthover li {
+        width: 84px;
+        height: 84px;
+        text-align: center; }
+      .new3 .new4 .righthover li:hover {
+        border: 4px solid #c69a62; }
+    .new3 .new4 .bottomhover {
+      height: 77px;
+      width: 338px;
+      position: absolute;
+      z-index: 3;
+      display: none; }
+      .new3 .new4 .bottomhover button {
+        width: 224px;
+        height: 43px;
+        background: #ec3e7d;
+        font-size: 18px;
+        text-align: center;
+        line-height: 43px;
+        margin-left: 58px;
+        margin-top: 20px;
+        border: none;
+        color: #fff; }
+        .new3 .new4 .bottomhover button p {
+          color: #fff; }
+  .new3 .new4:hover {
+    border: 1px solid #ccc;
+    border-right: none;
+    border-bottom: none; }
+    .new3 .new4:hover .righthover {
+      display: block;
+      background: #fff;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc; }
+    .new3 .new4:hover .bottomhover {
+      display: block;
+      background: #fff;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; }

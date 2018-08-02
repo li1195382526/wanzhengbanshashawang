@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>列表页</title>
     <link rel="stylesheet" href="../dist/index.min.css">
     <link rel="stylesheet" href="../dist/second.min.css">
 </head>
@@ -53,9 +53,9 @@
         </ul>
     </div>
     <!-- 横向菜单 -->
-    <div class = "list2">
+    <div class = "list2 list22">
         <ul>
-            <li><a href="">全部分类</a></li>
+            <li id = "list22"><a href="">全部分类</a></li>
             <li><a href=""><img src="../images/1.1.gif" alt=""></a></li>
             <li><a href="second.html">面部护理</a></li>
             <li><a href="">彩妆</a></li>
@@ -64,6 +64,20 @@
             <li><a href="">轻仓特卖</a></li>
             <li><a href="">所以产品</a></li>
         </ul>
+    </div>
+
+     <!-- 侧面菜单部分 -->
+    <div class = "list3 list33" id = "list33">
+            <ul>
+                <li><a href="second.html"><img src="../images/11.gif" alt="">面部护理</a><span><img src="../images/19.gif" alt=""></span></li>
+                <li><a href=""><img src="../images/12.gif" alt="">彩妆</a><span><img src="../images/19.gif" alt=""></span></li>
+                <li><a href=""><img src="../images/13.gif" alt="">香水</a><span><img src="../images/19.gif" alt=""></span></li>
+                <li><a href=""><img src="../images/14.gif" alt="">健康美肌</a><span><img src="../images/19.gif" alt=""></span></li>
+                <li><a href=""><img src="../images/15.gif" alt="">纤体美胸</a><span><img src="../images/19.gif" alt=""></span></li>
+                <li><a href=""><img src="../images/16.gif" alt="">个人护理</a><span><img src="../images/19.gif" alt=""></span></li>
+                <li><a href=""><img src="../images/17.gif" alt="">男士专区</a><span><img src="../images/19.gif" alt=""></span></li>
+                <li><a href=""><img src="../images/18.gif" alt="">婴儿护理</a><span><img src="../images/19.gif" alt=""></span></li>
+            </ul>
     </div>
     <!-- 购物车 -->
     <div class = "shopping">
@@ -83,8 +97,8 @@
         <div class = "product1">
             <!-- 列表 -->
             <h4>产品分类</h4>
-            <h5><img src="../images/2-1.gif" alt="">面部护理</h5>
-            <ul>
+            <h5 class = "hidden1"><img src="../images/2-1.gif" alt="">面部护理</h5>
+            <ul id = "hidden2">
                 <li><a href=""><img src="../images/2-2.gif" alt="">洁面</a></li>
                 <li><a href=""><img src="../images/2-2.gif" alt="">磨砂</a></li>
                 <li><a href=""><img src="../images/2-2.gif" alt="">卸妆</a></li>
@@ -103,6 +117,7 @@
                 <li><a href=""><img src="../images/2-2.gif" alt="">小样</a></li>
             </ul>
             <ul class = "product2">
+                <li class = "oli"><a href=""><img src="../images/2-6.gif" alt="">面部护理</a></li>
                 <li><a href=""><img src="../images/2-6.gif" alt="">彩妆</a></li>
                 <li><a href=""><img src="../images/2-6.gif" alt="">香水</a></li>
                 <li><a href=""><img src="../images/2-6.gif" alt="">健康美肌</a></li>
@@ -175,6 +190,7 @@
                 <i>更多<img src="../images/2-3.gif" alt=""></i>
 
             </div>
+            <!-- 更多选项提示 -->
             <div class = "many"><span>显示更多选项<img src="../images/2-4.gif" alt=""></span></div>
            <!-- 排序 销售 人气 -->
     <div class = "people">
@@ -193,32 +209,88 @@
         <div class = "new1 new4">
             <i>限时特卖</i>
             <div class = "right"><img src="../images/n1.gif" alt="">韩国品牌</div>
-            <img src="../images/2-9.gif" alt="" class = "img1">
+            <a href="details.html"><img src="../images/2-9.gif" alt="" class = "img1"></a>
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
+
+
+
+
         <div class = "new1 new4">
             <i>限时特卖</i>
             <div class = "right"><img src="../images/n1.gif" alt="">韩国品牌</div>
-            <img src="../images/2-12.gif" alt="" class = "img1">
+            <a href="details.html"><img src="../images/2-12.gif" alt="" class = "img1"></a>
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
+
         </div>
+
+
+             <!-- 划过效果 -->
+        <!-- <div class = "hover1"></div> -->
+        <!-- <div class = "hover2"></div> -->
+
+
+
         <div class = "new1 new4">
             <i>限时特卖</i>
             <div class = "right"><img src="../images/n1.gif" alt="">韩国品牌</div>
-            <img src="../images/2-9.gif" alt="" class = "img1">
+            <a href="details.html"><img src="../images/2-9.gif" alt="" class = "img1"></a>
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
+
         </div>
     </div>
      <div class = "new new3">
         <div class = "new1 new4">
             <i>限时特卖</i>
             <div class = "right"><img src="../images/n1.gif" alt="">韩国品牌</div>
-            <img src="../images/2-12.gif" alt="" class = "img1">
+            <a href="details.html"><img src="../images/2-12.gif" alt="" class = "img1"></a>
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -226,6 +298,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -233,6 +316,17 @@
             <img src="../images/2-12.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
     </div>
 
@@ -243,6 +337,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -250,6 +355,17 @@
             <img src="../images/2-12.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -257,6 +373,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
     </div>
 
@@ -267,6 +394,17 @@
             <img src="../images/2-12.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -274,6 +412,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -281,6 +430,17 @@
             <img src="../images/2-12.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
     </div>
 
@@ -291,6 +451,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4 new5">
             <i>限时特卖</i>
@@ -298,10 +469,20 @@
             <img src="../images/2-12.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
 
-        <!-- 划过效果 -->
-        <div class = "hover1"></div>
+
 
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -309,6 +490,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
     </div>
 
@@ -319,6 +511,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -326,6 +529,17 @@
             <img src="../images/2-12.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
 
         <div class = "new1 new4">
@@ -334,6 +548,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
     </div>
     <div class = "new new3">
@@ -343,6 +568,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -350,6 +586,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -357,6 +604,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
     </div>
 
@@ -367,6 +625,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -374,6 +643,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
         <div class = "new1 new4">
             <i>限时特卖</i>
@@ -381,6 +661,17 @@
             <img src="../images/2-9.gif" alt="" class = "img1">
             <span>面膜28MLx10面膜28MLx10面膜28MLx10面膜28MLx10</span>
             <div class = "new2">￥65 <del>￥119.0</del></div>
+            <!-- 划过效果 -->
+            <div class = "righthover">
+                <ul>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                    <li><img src="../img/16.gif" alt=""></li>
+                </ul>
+            </div>
+            <div class = "bottomhover">
+                <button><a href="details.html">立即抢购</a></button>
+            </div>
         </div>
     </div>
 </div>
@@ -454,3 +745,64 @@
 
 </body>
 </html>
+<script src = "../dist/index.min.js"></script>
+<script>
+    var $btn = $(".hidden1");
+    var $oUl = $("#hidden2");
+    var $oLi = $(".oli");
+    var $hh = $(".product2")
+    $btn.click(function(){
+        $oUl.css("display","none");
+        $btn.css("display","none");
+        // $btn.html("");
+        $oLi.css({display:"block",height:48});
+       $hh.css("height",450);
+})
+    $oLi.click(function(){
+         $oUl.css("display","block");
+        $btn.css("display","block");
+        // $btn.html("");
+        $oLi.css({display:"none",height:0});
+       $hh.css("height",402);
+    })
+
+    //划过显示列表
+    var oList22 = document.getElementById("list22");
+    var oList33 = document.getElementById("list33");
+    oList22.onmouseover = oList33.onmouseover = function(){
+        oList33.style.display = "block";
+    }
+    oList22.onmouseout =oList33.onmouseout = function(){
+        oList33.style.display = "none";
+    }
+
+    // json数据
+      // $.getJSON("src/js/.json",function(data){
+      //       var str = '';
+      //       $(data.one).each(function(index,value){
+      //           str += `
+      //               <div>
+      //                   <a href = "http://localhost/feihu/src/particular.html"><img src=${value.src} alt="" /></a>
+      //                   <a href = "#"><p>${value.name}</p></a>
+      //                   <span>${value.price}</span>
+      //               </div>
+      //           `;
+      //       });
+      //       var str2 = '';
+      //       $(data.two).each(function(index,value){
+      //           str2 += `
+      //               <div>
+      //                   <a href = "#"><img src=${value.src} alt="" /></a>
+      //                   <a href = "#"><p>${value.name}</p></a>
+      //                   <span>${value.price}</span>
+      //               </div>
+      //           `;
+      //       });
+
+      //       $('#add').html(str);
+      //       $('#add1').html(str2);
+      //       $('#add2').html(str);
+      //       $('#add3').html(str2);
+
+      //   })
+</script>

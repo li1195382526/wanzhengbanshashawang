@@ -1,0 +1,196 @@
+.top {
+  width: 100%;
+  height: 33px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #e5e5e5; }
+  .top .top1 {
+    width: 248px;
+    height: 38px;
+    margin-left: 74px;
+    float: left; }
+    .top .top1 p {
+      font-size: 12px;
+      color: #6c6c6c;
+      line-height: 38px; }
+      .top .top1 p span {
+        font-size: 12px;
+        color: #cb9966;
+        line-height: 38px; }
+      .top .top1 p a {
+        font-size: 12px;
+        color: #ec3e8b;
+        line-height: 38px; }
+
+.logo1 {
+  width: 100%;
+  height: 95px; }
+  .logo1 .img {
+    margin-left: -180px;
+    float: left; }
+  .logo1 .img1 {
+    width: 895px;
+    height: 95px;
+    float: left; }
+    .logo1 .img1 .img2 {
+      margin-left: 105px;
+      margin-top: 22px;
+      float: left; }
+    .logo1 .img1 .img3 {
+      margin-left: 120px;
+      margin-top: 36px;
+      float: left; }
+
+.prompt {
+  width: 985px;
+  height: 30px;
+  margin: 20px auto;
+  background: #ffab2e;
+  color: #fff;
+  line-height: 30px;
+  font-size: 12px; }
+
+.goods {
+  width: 985px;
+  height: 87px;
+  margin: 0 auto;
+  background: #f5f5f5; }
+  .goods img {
+    margin-top: 22px; }
+  .goods .ps {
+    width: 29px;
+    width: 985px; }
+    .goods .ps p {
+      float: right;
+      color: #666666;
+      font-size: 12px;
+      margin-right: 6px; }
+      .goods .ps p span {
+        color: #cc0044; }
+
+.cartList {
+  width: 985px;
+  height: auto; }
+  .cartList ul {
+    width: 985px;
+    height: 50px; }
+    .cartList ul li {
+      float: left;
+      width: 100px;
+      text-align: center;
+      margin-right: 60px;
+      height: 87px;
+      color: #333;
+      font-size: 12px; }
+  .cartList .blank {
+    float: left;
+    width: 985px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    display: none; }
+
+.add {
+  width: 985px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto; }
+  .add .add1 {
+    width: 985px;
+    height: 37px;
+    border-left: 5px solid #ed407e;
+    line-height: 37px;
+    font-size: 12px;
+    color: #666666; }
+    .add .add1 input {
+      margin-left: 8px; }
+  .add .add2 {
+    width: 985px;
+    height: auto;
+    margin-left: 14px;
+    margin-top: 30px;
+    float: left; }
+    .add .add2 ul {
+      height: 135px;
+      width: 985px; }
+      .add .add2 ul li {
+        float: left;
+        color: #666666;
+        font-size: 14px; }
+        .add .add2 ul li input {
+          float: left; }
+        .add .add2 ul li img {
+          width: 91px;
+          height: 67px;
+          float: left; }
+        .add .add2 ul li p {
+          float: left;
+          color: #666666;
+          font-size: 14px; }
+      .add .add2 ul li:nth-child(3) {
+        margin-left: 40px;
+        width: 150px;
+        text-align: center; }
+      .add .add2 ul li:nth-child(4) {
+        width: 150px;
+        text-align: center; }
+      .add .add2 ul li:nth-child(5) {
+        width: 100px;
+        text-align: center;
+        padding-left: 50px; }
+        .add .add2 ul li:nth-child(5) > a {
+          display: inline-block;
+          width: 10px;
+          height: 20px;
+          font: 12px/20px "";
+          background: #ddd;
+          text-decoration: none;
+          float: left; }
+        .add .add2 ul li:nth-child(5) > input {
+          display: inline-block;
+          float: left;
+          width: 20px;
+          height: 16px;
+          text-align: center; }
+      .add .add2 ul li:nth-child(6) {
+        width: 150px;
+        text-align: center;
+        margin-left: 10px; }
+      .add .add2 ul li:nth-child(7) {
+        width: 150px;
+        text-align: center;
+        margin-left: 20px; }
+
+.projest {
+  width: 985px;
+  height: 39px;
+  margin: 0 auto;
+  border-left: 3px solid #ed407e;
+  font-size: 12px;
+  color: #666666;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 39px; }
+
+.sum {
+  width: 985px;
+  height: 40px;
+  margin: 20px auto;
+  font-size: 12px;
+  line-height: 40px;
+  color: #666666; }
+  .sum span {
+    float: right;
+    margin-right: 40px; }
+    .sum span i {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      color: #dc457e; }
+  .sum button {
+    width: 132px;
+    height: 40px;
+    background: #ec3e7d;
+    border: none;
+    float: right;
+    font-size: 16px;
+    color: #fff; }
